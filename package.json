@@ -1,0 +1,25 @@
+{
+  "name": "agencia-viajes",
+  "version": "1.0.0",
+  "description": "Primer Projecto con nodejs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git remote add origin https://github.com/GianmarcoPablo/NodejsProject.git"
+  },
+  "type": "module",
+  "author": "Gian Marco",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "pug": "^3.0.2",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
