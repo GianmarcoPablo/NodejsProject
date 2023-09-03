@@ -1,5 +1,6 @@
 import { Router } from "express"
-import { paginaInicio, paginaNosotros, paginaViajes, paginaTestimoniales,paginaDetalleViaje } from "../controllers/PaginaController.js"
+import { paginaInicio, paginaNosotros, paginaViajes, paginaTestimoniales, paginaDetalleViaje } from "../controllers/PaginaController.js"
+import { guardarTestimonial } from "../controllers/TestimonialController.js"
 
 const router = Router()
 
@@ -12,5 +13,7 @@ router.get("/viajes", paginaViajes)
 router.get("/viajes/:viaje", paginaDetalleViaje)
 
 router.get("/testimoniales", paginaTestimoniales)
+
+router.post("/testimoniales", guardarTestimonial)
 
 export default router
